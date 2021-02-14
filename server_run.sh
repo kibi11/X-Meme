@@ -1,4 +1,4 @@
-cd backend
+cd X-meme
 
 npm install
 
