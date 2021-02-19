@@ -1,1 +1,1 @@
-sleep 200
+sleep 60
