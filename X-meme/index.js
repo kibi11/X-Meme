@@ -3,7 +3,14 @@ const express = require("express");
 const app = express();
 const cors = require("cors");
 const Meme = require("./models/meme");
-app.use(cors());
+app.use(
+  cors({
+    origin: "*",
+    methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
+    preflightContinue: false,
+    optionsSuccessStatus: 204,
+  })
+);
 app.use(express.json());
 // app.use(express.static('build'))
 

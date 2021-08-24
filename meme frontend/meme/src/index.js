@@ -38,7 +38,7 @@ const App = () => {
   }, []);
 
   function fetchImages(page = 1, take = 30) {
-    fetch(`http://localhost:8081/memes`)
+    fetch(`https://haha1243.herokuapp.com/memes`)
       .then((response) => response.json())
       .then((data) => {
         const newImages = [...images, ...data];
@@ -53,23 +53,25 @@ const App = () => {
         </div>
         <div class="items" id="contact">
           <h3>
-            {" "}
-            <a href="https://arpansingh.netlify.app/">Contact me</a>
+            <a href="mailto:arpansinghranchi@gmail.com">Contact me</a>
           </h3>
         </div>
       </div>
 
       <Addmeme images={images} setImages={setImages} />
+
       <div className="image-container">
-        {images.map((tile, index) => (
-          <div class="image-items" key={tile.id}>
-            <MemeCard
-              author={tile.name}
-              caption={tile.caption}
-              link={tile.url}
-            />
-          </div>
-        ))}
+        {images
+          .map((tile, index) => (
+            <div class="image-items" key={tile.id}>
+              <MemeCard
+                author={tile.name}
+                caption={tile.caption}
+                link={tile.url}
+              />
+            </div>
+          ))
+          .reverse()}
       </div>
     </>
   );

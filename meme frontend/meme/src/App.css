@@ -1,19 +1,15 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:300);
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Sacramento&display=swap');
 
-body {
-  background: #0B0B10;
-  display: flex;
-  min-height: 100vh;
-  justify-content: center;
-  align-items: center;
-}
 
 .form-container {
 
 
   margin: auto;
-  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
-  padding: 100px;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
+  max-width: 700px;
+  margin-top: 2em;
+
 }
 
 .register-form {
@@ -21,28 +17,32 @@ body {
   flex-direction: column;
   justify-content: space-evenly;
   padding: 10px;
+  
 }
 
 .success-message {
   font-family: "Roboto", sans-serif;
-  background-color: #3f89f8;
+  background-color: #ffb703;
   padding: 15px;
   color: white;
+
 
 }
 .add-new{
   text-align: center;
-  margin: 10px 190px 10px 190px;
-  background-color: #66FCF1 ;
+  background-color: #023047;
+  color: #f2f2f2;
+  font-family: 'poppins', 'Times New Roman', Times, serif;
 }
 
 .form-field {
-  margin: 10px 190px 10px 190px;
+  /* margin: 10px 190px 10px 190px; */
+  margin-top: 1em;
+  margin-bottom: 1em;
   padding: 15px;
   font-size: 16px;
   border: 0;
   border-radius: 20px 20px 20px 20px;
-
   font-family: "Roboto", sans-serif;
 }
 
@@ -64,11 +64,26 @@ input {
 }
 
 button {
-  background: #45A29E;
+  background: #1d3557;
   color: white;
   cursor: pointer;
+  width: 150px;
+  margin: auto;
+  transition: 300ms ease-out;
 }
 
 button:disabled {
   cursor: default;
+}
+
+button:hover {
+  /* letter-spacing: 1px; */
+  transform: scale(105%);
+  box-shadow: 2px 3px 2px rgb(185, 182, 182);
+}
+
+.captcha {
+  display: flex;
+  justify-content: center;
+
 }

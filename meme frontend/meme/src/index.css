@@ -1,40 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Klee+One&family=Rampart+One&display=swap');
+
 .head-bar{
-  color: #1F2833;
-  background-color: #C5C6C7;
+  /* color: #1F2833; */
+  background-color: #023047;
   display: flex;
-  flex-wrap: wrap;
-  justify-content:space-between;
   align-items: center;
-
+  box-sizing: border-box;
+  justify-content: flex-end; 
+  height: 100px;
+  margin: 0;
 }
 
-.items
-{
-  width: 300px;
-
-
-}
-#heading{
-  align-items: center;
-  text-align: center;
-
-}
-
-#contact{
-  align-items: center;
-  text-align: right;
-  padding-right: 50px;
-}
-
-a {
-  text-decoration: none !important;
-}
-a:visited {
-  text-decoration: none;
-  color: #1F2833;
-}
-a:hover {
+#heading {
+  flex-grow: 1;
+  padding: 25px;
   color: white;
+  font-family:'Rampart One','Courier New', Courier, monospace;
+  font-size: larger;
+  color: greenyellow;
+}
+
+#contact a{
+
+  text-decoration: none;
+  color: white;
+  padding: 25px;
+  font-family:'Klee One','Courier New', Courier, monospace;
+  font-weight: 600;
+
+
+}
+#contact a:hover {
+  color: greenyellow;
 }
 
 
@@ -42,18 +39,15 @@ a:hover {
 
 .image-container
 {
+  margin-top: 2em;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
   flex-direction: row;
-
-
 }
 .image-items
 {
-  width: 400px;
 
-  padding :10px;
-  margin: 10px;
+  
 }
