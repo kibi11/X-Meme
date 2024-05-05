@@ -34,7 +34,7 @@ export default function Addmeme({ images, setImages }) {
     if (values.name && values.url) {
       setValid(true);
       axios
-        .post("https://haha1243.herokuapp.com/memes", values)
+        .post("https://x-meme-zeta.vercel.app/memes", values)
         .then((response) => {
           console.log(response.data, "is the data that I get back");
           setImages(images.concat(response.data));
