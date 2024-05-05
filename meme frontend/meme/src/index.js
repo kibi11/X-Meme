@@ -38,7 +38,7 @@ const App = () => {
   }, []);
 
   function fetchImages(page = 1, take = 30) {
-    fetch(`https://haha1243.herokuapp.com/memes`)
+    fetch(`https://x-meme-zeta.vercel.app/memes`)
       .then((response) => response.json())
       .then((data) => {
         const newImages = [...images, ...data];
