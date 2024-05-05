@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import "./App.css";
 import ReCAPTCHA from "react-google-recaptcha";
 
-const RECAPTCHA_KEY = "6LfsfSAcAAAAALq__gDSoclFWYUfhGbXGdu4V8EZ";
+const RECAPTCHA_KEY = "6Lf0SNEpAAAAAG3FgFnQ3h2C16WVc_QiI2w6gZCn";
 const recaptchaRef = React.createRef();
 
 export default function Addmeme({ images, setImages }) {
